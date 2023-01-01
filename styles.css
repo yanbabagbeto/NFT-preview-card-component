@@ -38,6 +38,7 @@ main > img {
     background-position: center;
     background-size: contain;
     border-radius: 15px;
+    transition: all 2s ease-in-out;
 }
 .background-image:hover{
     background-image: url(images/icon-view.svg);
@@ -48,6 +49,7 @@ main > img {
       background-position: center;
     background-size: contain;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .background-image:hover:after {
@@ -72,9 +74,11 @@ main > img {
 }
 .title,.jules {
     color: hsl(0 0% 100%);
+    transition: all 2s ease-in-out;
 }
 .title:hover, .jules:hover {
     color: hsl(178, 100%, 50%);
+    cursor:pointer;
 }
 .accent {
     color: hsl(178, 100%, 50%);
