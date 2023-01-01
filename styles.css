@@ -1,0 +1,122 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    
+}
+
+main {
+
+    max-width: 370px;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: hsl(216, 50%, 16%);
+}
+main > img {
+    border-radius: 15px;
+    
+}
+.background-image {
+    width: 335px;
+    height: 335px;
+    background: url(images/image-equilibrium.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 15px;
+}
+.background-image:hover{
+    background-image: url(images/icon-view.svg);
+    background:  linear-gradient(
+        hsla(178, 50%, 50%, 0.70), 
+        /* rgba(255, 0, 0, 0.45) */hsla(178, 50%, 50%, 0.7)
+      ),url(images/image-equilibrium.jpg), url(images/icon-view.svg);
+      background-position: center;
+    background-size: contain;
+    border-radius: 15px;
+}
+
+.background-image:hover:after {
+    content: url(images/icon-view.svg);
+    position: relative;
+    width: inherit;
+    height: inherit;
+    top: 43%;
+    left: 43%;
+    
+  }
+
+
+.title,.description, .info,.author {
+    margin-bottom: 1rem;
+}
+
+.title {
+    margin-top: 1rem;
+    font-weight: 600;
+    
+}
+.title,.jules {
+    color: hsl(0 0% 100%);
+}
+.title:hover, .jules:hover {
+    color: hsl(178, 100%, 50%);
+}
+.accent {
+    color: hsl(178, 100%, 50%);
+}
+
+.description,.grey {
+    color: hsl(215, 51%, 70%);
+    line-height: 1.4;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.info p {
+    display: inline-block;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: .5px solid hsl(215, 51%, 70%); 
+}
+
+.author > p {
+    padding-top: .6rem;
+}
+.avatar {
+    width: 50px;
+    border: 2px solid hsl(0 0% 100%);
+    border-radius: 50%;
+    margin: 1rem 1rem 0 0 ;
+}
+
+.accent {
+    margin-right: 1rem;
+}
+.attribution {
+    margin-top: 0.5rem;
+    color: hsl(215, 51%, 70%); 
+}
